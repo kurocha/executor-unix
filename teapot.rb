@@ -10,9 +10,9 @@ define_target "executor-unix" do |target|
 	
 	target.depends :platform, public: true
 	
-	target.provides :debugger => "Debugger/none"
+	target.provides :executor => "Executor/none"
 	
-	target.provides "Debugger/none" do
+	target.provides "Executor/none" do
 		define Rule, "run.executable" do
 			input :executable_file
 			
