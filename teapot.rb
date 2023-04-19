@@ -8,8 +8,6 @@ teapot_version "3.0"
 define_target "executor-unix" do |target|
 	target.priority = 10
 	
-	target.depends :platform, public: true
-	
 	target.provides :executor => "Executor/none"
 	
 	target.provides "Executor/none" do
